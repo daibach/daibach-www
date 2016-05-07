@@ -1,0 +1,86 @@
+body { background: #fff; font-size: 16px; }
+a { color: #2e358b;}
+#content a { border-bottom: #2e358b 1px solid; }
+a:hover{ color: #6f72af; text-decoration: none; border-color: #428bca; }
+
+.navbar { margin-bottom: 40px; }
+.navbar-inverse { background: #2e358b; border-color: #2e358b; }
+.navbar-inverse .navbar-nav>li>a { color: #fff; }
+.navbar-inverse .navbar-nav>li>a:hover { background: #6f72af; }
+.nav-pills>li.active>a { background-color: #080808;}
+.nav-pills>li.active>a:hover { background-color: #2e358b; }
+
+.cookie-warning { background: #fff; padding: 10px 0; font-weight: bold; margin: -20px 0 20px 0;}
+.js-enabled .cookie-warning { display: none;}
+
+header.masthead { padding: 0 0 1em 0; margin: 0 0 1em 0; border-bottom: #efefef 1px solid; }
+header.masthead h1, header.masthead p { font-weight: bold; font-size: 3em; margin: 0 0 0.3em 0; padding: 0; line-height: 1.1em; }
+header.masthead h1 span, header.masthead p span { color: #2e358b;}
+header.masthead div.personal-intro { font-size: 2em;}
+@media (max-width: 768px) {
+  #dai-logo { max-width: 100px; }
+  header.masthead { margin: 1em 0; }
+  header.masthead h1 { font-size: 2em; }
+  header.masthead h1 span { display: block; }
+  header.masthead div.personal-intro { font-size: 1.5em; }
+}
+
+footer { margin: 2em 0 0 0; padding: 2em 0; }
+footer .container { border-top: #efefef 1px solid; padding-top: 2em; }
+footer h3 { font-weight: bold;}
+footer ul.followme { margin: 0; padding: 0; list-style: none;}
+footer ul.followme li { float: left; padding: 0 1em 1em 0;}
+footer .legal { text-align: left; font-weight: bold; }
+
+
+.jumboblock { background: #efefef; padding: 1em; font-size: 1.3em; }
+.jumboblock .intro { font-size: 1.5em; font-weight: bold;}
+
+main h1 { font-weight: bold; padding: 0 0 0.25em 0; font-size: 2.5em; }
+main h2 { font-weight: bold; padding: 0 0 0.25em 0; font-size: 2.5em; }
+.wrapper-home main h2 { margin: 0;}
+main header { margin: 0 0 15px 0; border-bottom: #efefef 1px dotted; }
+main .introduction { font-size: 1.5em; margin-bottom: 1em; }
+main .blog-wrapper { padding: 15px 0; }
+main .blog-wrapper article { padding: 0 0 1em 0;}
+main .post, main .project { margin: 0 0 50px 0;}
+main .post .post-meta { border-top: #efefef 1px solid; padding: 5px 0 0 0; margin: 0;}
+main .post .post-meta p { margin: 0; text-align: left; padding: 2px 30px 3px 0px; }
+main .project .post-meta { background: #fff; padding: 1em; margin: 0 0 30px 0; }
+main .project .post-meta p { padding: 0; margin: 0;}
+main .post-daibach .post-meta p { background: transparent url(/images/icons/daibach.gif) no-repeat top right;}
+main .post-cedyrn .post-meta p { background: transparent url(/images/icons/cedyrn.gif) no-repeat top right;}
+main .post-waterfront .post-meta p { background: transparent url(/images/waterfront.png) no-repeat top right;}
+main .post-cflabs .post-meta p { background: transparent url(/images/icons/cflabs.gif) no-repeat top right;}
+main .post-gds .post-meta p { background: transparent url(/images/icons/gds.gif) no-repeat top right;}
+main .post-dvla .post-meta p { background: transparent url(/images/icons/dvla.gif) no-repeat top right;}
+main .post-tumblr .post-meta p { background: transparent url(/images/icons/tumblr.gif) no-repeat top right;}
+
+.sidebar { padding: 1.5em 0 0 0; }
+
+main .post-image { float: right; margin: 0 0 15px 15px; border: #efefef 1px solid;}
+@media (max-width: 768px) { main .post-image { float: none; margin: 0; } }
+main .post-tumblr .post-image { float: left; margin: 0 15px 15px 0;}
+
+main .table-profile td.twitter { background: transparent url(/images/icons/twitter.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.facebook { background: transparent url(/images/icons/facebook.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.flickr { background: transparent url(/images/icons/flickr.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.linkedin { background: transparent url(/images/icons/linkedin.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.tumblr { background: transparent url(/images/icons/tumblr.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.lastfm { background: transparent url(/images/icons/lastfm.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.daibach { background: transparent url(/images/icons/daibach.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.cflabs { background: transparent url(/images/icons/cflabs.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.cedyrn { background: transparent url(/images/icons/cedyrn.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.gds { background: transparent url(/images/icons/gds.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.dvla { background: transparent url(/images/icons/dvla.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.github { background: transparent url(/images/icons/github.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.govuk { background: transparent url(/images/icons/govuk.gif) no-repeat 10px 5px; padding-left: 40px; }
+main .table-profile td.waterfront { background: transparent url(/images/waterfront.gif) no-repeat 10px 5px; padding-left: 40px; }
+
+main .contact-form label { display: block; }
+main .contact-form .required { color: #c0392b;}
+main .contact-form input[type="text"], main .contact-form input[type="email"], main .contact-form input[type="url"], main .contact-form textarea { border: rgba(0,0,0,0.1) 1px solid; max-width: 100%; padding: 10px;}
+@media (min-width: 768px) { .comment-form textarea { width: 500px;} }
+
+main .media-grid { list-style: none; margin: 0; padding: 0;}
+main .media-grid li { float: left; margin: 0 10px 10px 0;}

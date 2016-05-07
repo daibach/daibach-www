@@ -20,6 +20,93 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+
+    $page_data = array(
+      'title' => SITE_NAME . " - web developer and tech arch",
+      'meta_description' => "Dafydd Vaughan - web developer and tech arch. I build stuff for the web at the Government Digital Service",
+      "site_section" => "home"
+    );
+
+    $this->load->view('templates/header', $page_data);
+		$this->load->view('welcome');
+    $this->load->view('templates/footer');
 	}
+
+  public function profile()
+  {
+    $page_data = array(
+      'title' => "About me - " . SITE_NAME,
+      "site_section" => "about",
+      "site_page" => "profile"
+    );
+
+    $this->load->view('templates/header', $page_data);
+		$this->load->view('profile');
+    $this->load->view('templates/footer');
+  }
+
+  public function more()
+  {
+    $page_data = array(
+      'title' => SITE_NAME . ' around the web',
+      "site_section" => "about",
+      "site_page" => "more-me"
+    );
+
+    $this->load->view('templates/header', $page_data);
+		$this->load->view('more');
+    $this->load->view('templates/footer');
+  }
+
+  public function contact()
+  {
+    $page_data = array(
+      'title' => "Contact Me - " . SITE_NAME,
+      "site_section" => "contact",
+      "site_page" => "contact"
+    );
+
+    $this->load->view('templates/header', $page_data);
+		$this->load->view('contact');
+    $this->load->view('templates/footer');
+  }
+
+  public function blogs()
+  {
+    $page_data = array(
+      'title' => "Things I've Written - " . SITE_NAME,
+      "site_section" => "about",
+      "site_page" => "writing"
+    );
+
+    $this->load->view('templates/header', $page_data);
+		$this->load->view('blogs');
+    $this->load->view('templates/footer');
+  }
+
+  public function privacy()
+  {
+    $page_data = array(
+      'title' => "Privacy &amp; cookies on this site - " . SITE_NAME,
+      "site_section" => "privacy",
+      "site_page" => "privacy"
+    );
+
+    $this->load->view('templates/header', $page_data);
+    $this->load->view('privacy');
+    $this->load->view('templates/footer');
+  }
+
+  public function cookies()
+  {
+    $page_data = array(
+      'title' => "The cookies - privacy &amp; cookies on this site - " . SITE_NAME,
+      "site_section" => "privacy",
+      "site_page" => "cookies"
+    );
+
+    $this->load->view('templates/header', $page_data);
+    $this->load->view('cookies');
+    $this->load->view('templates/footer');
+  }
 }
