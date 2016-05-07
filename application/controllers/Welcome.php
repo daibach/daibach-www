@@ -76,7 +76,7 @@ class Welcome extends CI_Controller {
     $page_data = array(
       'title' => "Things I've Written - " . SITE_NAME,
       "site_section" => "about",
-      "site_page" => "writing"
+      "site_page" => "writings"
     );
 
     $this->load->view('templates/header', $page_data);
