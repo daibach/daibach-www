@@ -51,7 +51,7 @@
   </footer>
 
 
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="/javascript/bootstrap/bootstrap.3.0.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="/javascript/bootstrap/bootstrap.3.3.6.min.js"></script>
   </body>
 </html>
