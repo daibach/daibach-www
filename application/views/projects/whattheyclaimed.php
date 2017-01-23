@@ -1,7 +1,4 @@
 <article class="project project-1" id="project-1">
-  <header>
-    <h2>WhatTheyClaimed</h2>
-  </header>
   <div class="post-content">
     <img src="/images/projects/whattheyclaimed.jpg" width="250" class="post-image img-rounded thumbnail" >
 

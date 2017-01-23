@@ -6,9 +6,10 @@ class Projects extends CI_Controller {
 	public function index()
 	{
     $page_data = array(
-      'title' => "My Projects - " . SITE_NAME,
+      'title' => "Side projects - " . SITE_NAME,
       "site_section" => "projects",
-      "site_page" => "highlights"
+      "site_page" => "highlights",
+      "page_title" => "Side projects"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -19,9 +20,10 @@ class Projects extends CI_Controller {
   public function the_rest()
   {
     $page_data = array(
-      'title' => "My Projects (The Rest) - " . SITE_NAME,
+      'title' => "Side projects (the rest) - " . SITE_NAME,
       "site_section" => "projects",
-      "site_page" => "the-rest"
+      "site_page" => "the-rest",
+      "page_title" => "Side projects (the rest)"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -32,8 +34,9 @@ class Projects extends CI_Controller {
   public function govuk_infoscreens()
   {
     $page_data = array(
-      'title' => "GOV.UK Infoscreens - My Projects - " . SITE_NAME,
-      "site_section" => "projects"
+      'title' => "GOV.UK Infoscreens - Side projects - " . SITE_NAME,
+      "site_section" => "projects",
+      "page_title" => "Project: GOV.UK Infoscreens"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -44,8 +47,9 @@ class Projects extends CI_Controller {
   public function spending_tweets()
   {
     $page_data = array(
-      'title' => "Spending Tweets - My Projects - " . SITE_NAME,
-      "site_section" => "projects"
+      'title' => "Spending Tweets - Side projects - " . SITE_NAME,
+      "site_section" => "projects",
+      "page_title" => "Project: Spending Tweets"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -56,8 +60,9 @@ class Projects extends CI_Controller {
   public function whattheyclaimed()
   {
     $page_data = array(
-      'title' => "WhatTheyClaimed - My Projects - " . SITE_NAME,
-      "site_section" => "projects"
+      'title' => "WhatTheyClaimed - Side projects - " . SITE_NAME,
+      "site_section" => "projects",
+      "page_title" => "Project: WhatTheyClaimed"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -68,8 +73,9 @@ class Projects extends CI_Controller {
   public function cllrtweeps()
   {
     $page_data = array(
-      'title' => "CllrTweeps - My Projects - " . SITE_NAME,
-      "site_section" => "projects"
+      'title' => "CllrTweeps - Side projects - " . SITE_NAME,
+      "site_section" => "projects",
+      "page_title" => "Project: CllrTweeps"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -80,8 +86,9 @@ class Projects extends CI_Controller {
   public function waterfront()
   {
     $page_data = array(
-      'title' => "Waterfront - My Projects - " . SITE_NAME,
-      "site_section" => "projects"
+      'title' => "Waterfront - Side projects - " . SITE_NAME,
+      "site_section" => "projects",
+      "page_title" => "Project: Waterfront"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -92,8 +99,9 @@ class Projects extends CI_Controller {
   public function food_for_thought()
   {
     $page_data = array(
-      'title' => "Food for Thought (Young Rewired State 2011) - My Projects - " . SITE_NAME,
-      "site_section" => "projects"
+      'title' => "Food for Thought (Young Rewired State 2011) - Side projects - " . SITE_NAME,
+      "site_section" => "projects",
+      "page_title" => "Project: Food for Thought"
     );
 
     $this->load->view('templates/header', $page_data);

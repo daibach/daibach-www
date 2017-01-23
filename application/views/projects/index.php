@@ -1,6 +1,3 @@
-
-<h1>My projects</h1>
-
 <p class="intro">These are some of the projects and tools that I've built over the past few years. Some are related to my day job but most are more personal projects. You can find more on <a href="https://github.com/daibach">GitHub</a>.</p>
 
 <h2 class="sr-only">Highlights</h2>

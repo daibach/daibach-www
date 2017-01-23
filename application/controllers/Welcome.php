@@ -24,7 +24,8 @@ class Welcome extends CI_Controller {
     $page_data = array(
       'title' => SITE_NAME . " - web developer and tech arch",
       'meta_description' => "Dafydd Vaughan - web developer and tech arch. I build stuff for the web at the Government Digital Service",
-      "site_section" => "home"
+      "site_section" => "home",
+      "page_title" => "Hello, I'm Dafydd Vaughan"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -37,7 +38,8 @@ class Welcome extends CI_Controller {
     $page_data = array(
       'title' => "About me - " . SITE_NAME,
       "site_section" => "about",
-      "site_page" => "profile"
+      "site_page" => "profile",
+      "page_title" => "About me"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -50,7 +52,8 @@ class Welcome extends CI_Controller {
     $page_data = array(
       'title' => SITE_NAME . ' around the web',
       "site_section" => "about",
-      "site_page" => "more-me"
+      "site_page" => "more-me",
+      "page_title" => "Find me online"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -63,7 +66,8 @@ class Welcome extends CI_Controller {
     $page_data = array(
       'title' => "Contact Me - " . SITE_NAME,
       "site_section" => "contact",
-      "site_page" => "contact"
+      "site_page" => "contact",
+      "page_title" => "Contact me"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -76,7 +80,8 @@ class Welcome extends CI_Controller {
     $page_data = array(
       'title' => "Things I've Written - " . SITE_NAME,
       "site_section" => "about",
-      "site_page" => "writings"
+      "site_page" => "writings",
+      "page_title" => "Things I've written"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -89,7 +94,8 @@ class Welcome extends CI_Controller {
     $page_data = array(
       'title' => "Privacy &amp; cookies on this site - " . SITE_NAME,
       "site_section" => "privacy",
-      "site_page" => "privacy"
+      "site_page" => "privacy",
+      "page_title" => "Privacy &amp; cookies"
     );
 
     $this->load->view('templates/header', $page_data);
@@ -102,7 +108,8 @@ class Welcome extends CI_Controller {
     $page_data = array(
       'title' => "The cookies - privacy &amp; cookies on this site - " . SITE_NAME,
       "site_section" => "privacy",
-      "site_page" => "cookies"
+      "site_page" => "cookies",
+      "page_title" => "Cookies"
     );
 
     $this->load->view('templates/header', $page_data);

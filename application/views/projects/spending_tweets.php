@@ -1,7 +1,4 @@
 <article class="project project-1" id="project-1">
-  <header>
-    <h2>Spending Tweets</h2>
-  </header>
   <div class="post-content">
     <img src="/images/projects/spending-tweets.jpg" width="250" class="post-image img-rounded thumbnail" >
 

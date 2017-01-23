@@ -1,4 +1,3 @@
-<h1>Privacy &amp; Cookies</h1>
 
 <p><strong>This site uses cookies</strong>. These are small files that are placed on your computer to help the site remember information from one page to another. Most big sites do this too.</p>
 

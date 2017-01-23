@@ -1,7 +1,4 @@
 <article class="project project-1" id="project-1">
-  <header>
-    <h2>CllrTweeps</h2>
-  </header>
   <div class="post-content">
     <img src="/images/projects/cllrtweeps.jpg" width="250" class="post-image img-rounded thumbnail" >
     <p>CllrTweeps was a joint project with <a href="https://twitter.com/jamescousins" title="Follow James Cousins on twitter">James Cousins</a> and aimed to be the definitive directory of local authority councillors using Twitter.</p>
