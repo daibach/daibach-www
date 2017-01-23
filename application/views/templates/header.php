@@ -16,7 +16,7 @@
     <?php endif; ?>
 
     <link rel="stylesheet" href="/css/bootstrap/bootstrap.3.3.6.min.css">
-    <link rel="stylesheet" href="/css/core5.css">
+    <link rel="stylesheet" href="/css/daibach14.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,7 +35,7 @@
     </script>
     <?php endif; ?>
   </head>
-  <body>
+  <body <?php if(isset($site_section)) :?>class="<?php echo $site_section; ?>"<?php endif; ?>>
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     <div class="navbar navbar-default navbar-static-top navbar-inverse" role="navigation">
       <div class="container">
@@ -46,36 +46,31 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand" href="/" title="Dafydd Vaughan"><img src="/images/dai-2016.jpg" id="dai-logo" class="img-rounded" width="25"/> <span>Dafydd Vaughan</span></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li<?php if(isset($site_section) && $site_section=='home') : ?> class="active"<?php endif; ?>><a href="/" title="return to the home page">Home</a></li>
-            <li<?php if(isset($site_section) && $site_section=='about') : ?> class="active"<?php endif; ?>><a href="/profile" title="my profile">About Me</a></li>
+            <li<?php if(isset($site_section) && $site_section=='about') : ?> class="active"<?php endif; ?>><a href="/profile" title="my profile">About me</a></li>
             <li><a href="https://daibach.uk/" title="Dafydd's blog" >Blog</a></li>
-            <li<?php if(isset($site_section) && $site_section=='projects') : ?> class="active"<?php endif; ?>><a href="/projects" title="my projects">Projects &amp; Code</a></li>
+            <li<?php if(isset($site_section) && $site_section=='projects') : ?> class="active"<?php endif; ?>><a href="/projects" title="side projects">Side projects</a></li>
             <li<?php if(isset($site_section) && $site_section=='contact') : ?> class="active"<?php endif; ?>><a href="/contact" title="Contact me" >Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
-    <div class="cookie-warning"><div class="container">This site uses cookies to make the site simpler. <a href="/privacy">Find out more about cookies</a>.</div></div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 col-sm-2 col-xs-12"><img src="/images/dai-2016.jpg" id="dai-logo" class="img-rounded img-responsive" width="140"/></div>
-        <div class="col-md-10 col-sm-10 col-xs-12">
-          <header class="masthead">
-            <?php if(isset($site_section)) : ?>
-              <?php if($site_section=='about' || $site_section=='contact'
-                || $site_section=='projects' || $site_section=='privacy') : ?>
-                <p>Hello, I'm <span>Dafydd Vaughan</span></p>
-              <?php else : ?>
-                <h1>Hello, I'm <span>Dafydd Vaughan</span></h1>
-              <?php endif; ?>
+    <main id="content" role="main">
+      <?php if(isset($site_section) && $site_section=='home') : ?>
+      <?php else : ?>
+        <header>
+          <div class="container">
+            <?php if(isset($page_title)) : ?>
+              <h1><?php echo $page_title; ?></h1>
             <?php endif; ?>
-          </header>
-
+          </div>
+        </header>
+        <div class="container">
           <?php if(isset($site_section)) : ?>
             <?php if($site_section=='about' || $site_section=='contact'
               || $site_section=='projects' || $site_section=='privacy') : ?>
@@ -83,5 +78,4 @@
                 <div class="col-md-9 col-sm-8">
             <?php endif;?>
           <?php endif; ?>
-
-          <main id="content" role="main">
+      <?php endif; ?>
