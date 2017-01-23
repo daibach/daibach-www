@@ -61,20 +61,6 @@ class Welcome extends CI_Controller {
     $this->load->view('templates/footer');
   }
 
-  public function contact()
-  {
-    $page_data = array(
-      'title' => "Contact Me - " . SITE_NAME,
-      "site_section" => "contact",
-      "site_page" => "contact",
-      "page_title" => "Contact me"
-    );
-
-    $this->load->view('templates/header', $page_data);
-		$this->load->view('contact');
-    $this->load->view('templates/footer');
-  }
-
   public function blogs()
   {
     $page_data = array(
