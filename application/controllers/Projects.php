@@ -22,6 +22,7 @@ class Projects extends CI_Controller {
     $page_data = array(
       'title' => "GOV.UK Infoscreens - Side projects - " . SITE_NAME,
       "site_section" => "projects",
+      "site_page" => "govuk-infoscreens",
       "page_title" => "Project: GOV.UK Infoscreens"
     );
 
@@ -35,6 +36,7 @@ class Projects extends CI_Controller {
     $page_data = array(
       'title' => "Spending Tweets - Side projects - " . SITE_NAME,
       "site_section" => "projects",
+      "site_page" => "spending-tweets",
       "page_title" => "Project: Spending Tweets"
     );
 
@@ -48,6 +50,7 @@ class Projects extends CI_Controller {
     $page_data = array(
       'title' => "WhatTheyClaimed - Side projects - " . SITE_NAME,
       "site_section" => "projects",
+      "site_page" => "whattheyclaimed",
       "page_title" => "Project: WhatTheyClaimed"
     );
 
@@ -61,6 +64,7 @@ class Projects extends CI_Controller {
     $page_data = array(
       'title' => "CllrTweeps - Side projects - " . SITE_NAME,
       "site_section" => "projects",
+      "site_page" => "cllrtweeps",
       "page_title" => "Project: CllrTweeps"
     );
 
@@ -74,6 +78,7 @@ class Projects extends CI_Controller {
     $page_data = array(
       'title' => "Waterfront - Side projects - " . SITE_NAME,
       "site_section" => "projects",
+      "site_page" => "waterfront",
       "page_title" => "Project: Waterfront"
     );
 
@@ -87,6 +92,7 @@ class Projects extends CI_Controller {
     $page_data = array(
       'title' => "Food for Thought (Young Rewired State 2011) - Side projects - " . SITE_NAME,
       "site_section" => "projects",
+      "site_page" => "food-for-thought",
       "page_title" => "Project: Food for Thought"
     );
 
