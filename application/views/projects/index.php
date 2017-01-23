@@ -2,7 +2,7 @@
 
 <h2 class="sr-only">Highlights</h2>
 
-<div class="blog-wrapper">
+<div class="post-wrapper">
 
   <article class="project post-project project-1" id="project-1">
     <header>
