@@ -17,20 +17,6 @@ class Projects extends CI_Controller {
     $this->load->view('templates/footer');
 	}
 
-  public function the_rest()
-  {
-    $page_data = array(
-      'title' => "Side projects (the rest) - " . SITE_NAME,
-      "site_section" => "projects",
-      "site_page" => "the-rest",
-      "page_title" => "Side projects (the rest)"
-    );
-
-    $this->load->view('templates/header', $page_data);
-    $this->load->view('projects/the_rest');
-    $this->load->view('templates/footer');
-  }
-
   public function govuk_infoscreens()
   {
     $page_data = array(
