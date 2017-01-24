@@ -21,12 +21,12 @@ class Contact extends CI_Controller {
       if($this->_process_form()) {
         $this->_show_success();
       } else {
-        $this->_show_form();
+        $this->_show_form(array('sending_failed'=>TRUE));
       }
     }
   }
 
-  private function _show_form() {
+  private function _show_form($extra_data = NULL) {
     $this->load->helper('form');
     $page_data = array(
       'title' => "Contact Me - " . SITE_NAME,
@@ -36,7 +36,7 @@ class Contact extends CI_Controller {
     );
 
     $this->load->view('templates/header', $page_data);
-    $this->load->view('contact');
+    $this->load->view('contact',$extra_data);
     $this->load->view('templates/footer');
   }
 

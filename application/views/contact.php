@@ -4,6 +4,9 @@ if (validation_errors()) {
   echo validation_errors();
   echo "</ul></div>";
 }
+if(isset($sending_failed) && $sending_failed) {
+  echo "<div class='alert alert-danger'><p><strong>Sorry, something went wrong while sending the message.</strong></p><p>Please try again</p></div>";
+}
 ?>
 <form method="post" action="/contact/send" class="contact-form">
   <fieldset>
