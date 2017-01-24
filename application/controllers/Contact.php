@@ -18,7 +18,11 @@ class Contact extends CI_Controller {
     if ($this->form_validation->run() == FALSE) {
       $this->_show_form();
     } else {
-      $this->_show_success();
+      if($this->_process_form()) {
+        $this->_show_success();
+      } else {
+        $this->_show_form();
+      }
     }
   }
 
