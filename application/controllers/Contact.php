@@ -88,4 +88,59 @@ class Contact extends CI_Controller {
     return $config;
   }
 
+  private function _process_form() {
+    $referrer=$xforward=$ua = "";
+    $name = $this->input->post('txtName');
+    $email = $this->input->post('txtEmail');
+    $message = $this->input->post('txtMessage');
+    $ip = $_SERVER['REMOTE_ADDR'];
+    if(isset($_SERVER['HTTP_REFERER']))         { $referrer = $_SERVER['HTTP_REFERER']; }
+    if(isset($_SERVER['HTTP_X_FORWARDED_FOR'])) { $xforward = $_SERVER['HTTP_X_FORWARDED_FOR']; }
+    if(isset($_SERVER['HTTP_USER_AGENT']))      { $ua       = $_SERVER['HTTP_USER_AGENT']; }
+    return $this->_submit_contact($name,$email,$message,$referrer,$ip,$xforward,$ua);
+  }
+
+  private function _submit_contact($name,$email,$message,$referrer,$ip,$xforward,$ua) {
+    $params = http_build_query(array(
+      'site'      => CONTACT_API_CODE,
+      'key'       => CONTACT_API_KEY,
+      'name'      => $name,
+      'email'     => $email,
+      'message'   => $message,
+      'source'    => current_url(),
+      'referrer'  => $referrer,
+      'ip'        => $ip,
+      'xforward'  => $xforward,
+      'ua'        => $ua
+    ));
+
+    $useragent = CONTACT_API_UA;
+    $url = CONTACT_API_ENDPOINT;
+
+    $ch = curl_init();
+    curl_setopt_array($ch, array(
+      CURLOPT_HEADER => FALSE,
+      CURLOPT_RETURNTRANSFER => TRUE,
+      CURLOPT_FAILONERROR => TRUE,
+      CURLOPT_COOKIESESSION => TRUE,
+      CURLOPT_FOLLOWLOCATION => TRUE,
+      CURLOPT_COOKIEJAR => "/dev/null",
+      CURLOPT_CONNECTTIMEOUT => 14,
+      CURLOPT_TIMEOUT => 21,
+      CURLOPT_POST => TRUE,
+      CURLOPT_POSTFIELDS => $params,
+      CURLOPT_SSL_VERIFYPEER => false,
+      CURLOPT_FOLLOWLOCATION => true,
+      CURLOPT_USERAGENT => $useragent,
+      CURLOPT_URL => $url));
+
+    $response = curl_exec($ch);
+    $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    if($http_status===200) {
+      return TRUE;
+    } else {
+      return FALSE;
+    }
+  }
+
 }
