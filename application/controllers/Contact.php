@@ -138,6 +138,10 @@ class Contact extends CI_Controller {
       CURLOPT_USERAGENT => $useragent,
       CURLOPT_URL => $url));
 
+    if(CONTACT_API_HTTP_AUTH) {
+      curl_setopt($ch, CURLOPT_USERPWD, CONTACT_API_HTTP_AUTH_U.":".CONTACT_API_HTTP_AUTH_P);
+    }
+
     $response = curl_exec($ch);
     $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     if($http_status===200) {
