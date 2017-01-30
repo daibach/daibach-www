@@ -55,7 +55,6 @@ main>.container>h2,
 main>.container>h3,
 main>.container>h4,
 main>.container>hr { margin-right: 300px; }
-.about main>.container .block p { font-size: 1.2em; padding-bottom: 5px;}
 .block { background: #d4e8f3; padding: 15px; margin: 0 0 30px 0; }
 
 
@@ -130,6 +129,7 @@ main .post .post-meta p { margin: 0; text-align: left; padding: 2px 30px 3px 0px
 main .post .post-meta p a { border-bottom: 0;  }
 main .media-grid { list-style: none; margin: 0; padding: 0;}
 main .media-grid li { float: left; margin: 0 10px 10px 0;}
+main .media-grid-compact .thumbnail { padding: 0; margin-bottom: 0;}
 /*
 @media (max-width: 767px) {
   main .project .post-content img.post-image { display: none; }

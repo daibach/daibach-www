@@ -4,6 +4,19 @@
 
 <div class="post-wrapper">
 
+  <article class="project post-project project-0" id="project-0">
+    <header>
+      <h2><a href="/projects/govuk-local-services-explorer" title="read more about GOV.UK Local Services Explorer">GOV.UK Local Services Explorer</a></h2>
+      <img src="/images/projects/govuk-local-services-explorer/thumnail.jpg" width="250" class="img-rounded post-image">
+    </header>
+    <div class="post-content">
+      <p>The GOV.UK website provides many links to services run by various parts of local government in the UK. The local services explorer provided a simple way of seeing what linked to where, which links were missing, which ones mattered, and whether those links worked.</p>
+      <p>The service was used by the team at the Government Digital Service to track down problems with the links database.</p>
+      <p><a href="/projects/govuk-local-services-explorer">Find out more &raquo;</a></p>
+      <div class="clearfix"></div>
+    </div><!-- /.postcontent -->
+  </article>
+
   <article class="project post-project project-1" id="project-1">
     <header>
       <h2><a href="/projects/govuk-infoscreens" title="read more about GOV.UK Infoscreens">GOV.UK Infoscreens</a></h2>

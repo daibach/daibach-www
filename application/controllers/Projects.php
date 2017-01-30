@@ -17,6 +17,19 @@ class Projects extends CI_Controller {
     $this->load->view('templates/footer');
 	}
 
+  public function govuk_local_services_explorer() {
+    $page_data = array(
+      'title' => "GOV.UK Local Services Explorer - Side projects - " . SITE_NAME,
+      "site_section" => "projects",
+      "site_page" => "govuk-local-explorer",
+      "page_title" => "Project: GOV.UK Local Services Explorer"
+    );
+
+    $this->load->view('templates/header', $page_data);
+    $this->load->view('projects/govuk_local_services_explorer');
+    $this->load->view('templates/footer');
+  }
+
   public function govuk_infoscreens()
   {
     $page_data = array(
