@@ -49,12 +49,12 @@ class Welcome extends CI_Controller {
 
   public function more()
   {
-    redirect(site_url('about'),'location',307)
+    redirect(site_url('about'),'location',307);
   }
 
   public function blogs()
   {
-    redirect(site_url('about'),'location',307)
+    redirect(site_url('about'),'location',307);
   }
 
   public function privacy()
