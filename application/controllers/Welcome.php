@@ -49,30 +49,12 @@ class Welcome extends CI_Controller {
 
   public function more()
   {
-    $page_data = array(
-      'title' => SITE_NAME . ' around the web',
-      "site_section" => "about",
-      "site_page" => "more-me",
-      "page_title" => "Find me online"
-    );
-
-    $this->load->view('templates/header', $page_data);
-		$this->load->view('more');
-    $this->load->view('templates/footer');
+    redirect(site_url('about'),'location',307)
   }
 
   public function blogs()
   {
-    $page_data = array(
-      'title' => "Things I've Written - " . SITE_NAME,
-      "site_section" => "about",
-      "site_page" => "writings",
-      "page_title" => "Things I've written"
-    );
-
-    $this->load->view('templates/header', $page_data);
-		$this->load->view('blogs');
-    $this->load->view('templates/footer');
+    redirect(site_url('about'),'location',307)
   }
 
   public function privacy()
