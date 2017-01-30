@@ -60,7 +60,7 @@
   </footer>
 
 
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <script src="/javascript/bootstrap/bootstrap.3.3.6.min.js"></script>
+  <script src="/javascript/jquery-2.2.3.min.js"></script>
+  <script src="/javascript/bootstrap.3.3.7.min.js"></script>
   </body>
 </html>
