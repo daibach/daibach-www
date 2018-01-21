@@ -26,7 +26,7 @@ if(isset($sending_failed) && $sending_failed) {
 
     <p class="contact-form-submit">
       <input type="hidden" value="" name="txtValid" id="contactvalid" />
-      <?php $data = array('name'=>'btnSubmit','id'=>'btnSubmit', 'class'=>'btn btn-primary btn-lg');
+      <?php $data = array('name'=>'btnSubmit','id'=>'btnSubmit', 'class'=>'btn btn-dark btn-lg');
       echo form_submit($data, 'Send Message');?></p>
 
   </fieldset>

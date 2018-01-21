@@ -1,6 +1,6 @@
 <article class="project project-1" id="project-1">
   <div class="post-content">
-    <img src="/images/projects/waterfront.jpg" width="250" class="post-image img-rounded thumbnail" >
+    <img src="/images/projects/waterfront.jpg" width="250" class="img-fluid float-sm-right ml-sm-2 mb-sm-2" >
     <p>Project Metis was a joint project (with <a href="https://twitter.com/akyan">James Gawn</a>) to develop a new website and content management system for The Waterfront - the student newspaper of Swansea University.</p>
 
     <p>Prior to this project, the site had been maintained by editing static files and transferring them to the server using FTP.  As a result, only a small amount of the newspaper's content would make it online.  Project Metis aimed to develop a PHP based website around a content management system to make it possible to not only include all of the newspaper's content, but also exclusive online.</p>

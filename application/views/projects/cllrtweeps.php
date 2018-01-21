@@ -1,6 +1,6 @@
 <article class="project project-1" id="project-1">
   <div class="post-content">
-    <img src="/images/projects/cllrtweeps.jpg" width="250" class="post-image img-rounded thumbnail" >
+    <img src="/images/projects/cllrtweeps.jpg" width="250" class="img-fluid float-sm-right ml-sm-2 mb-sm-2" >
     <p>CllrTweeps was a joint project with <a href="https://twitter.com/jamescousins" title="Follow James Cousins on twitter">James Cousins</a> and aimed to be the definitive directory of local authority councillors using Twitter.</p>
 
     <p>Inspired by <a href="http://www.tweetminster.co.uk">TweetMinster</a>, the site listed councillors by local authority and political party.  Later versions of the app also included details of local authorities, near real-time lists of tweets and an open API.</p>

@@ -1,6 +1,6 @@
 <article class="project project-1" id="project-1">
   <div class="post-content">
-    <img src="/images/projects/food-for-thought.jpg" width="250" class="post-image img-rounded thumbnail" >
+    <img src="/images/projects/food-for-thought.jpg" width="250" class="img-fluid float-sm-right ml-sm-2 mb-sm-2" >
 
     <p>In the summer of 2011 I took part, as a mentor, in <a href="https://youngrewiredstate.org">Young Rewired State</a>, a week designed to encourage coding in those aged under 18. Based in the Cardiff centre (hosted by <a href="http://www.sequence.co.uk">Sequence</a>), I was one of the mentors for 17 year old <a href="http://joel-murphy.com/young-rewired-state-2011/">Joel Murphy</a>.</p>
 

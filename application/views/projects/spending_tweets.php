@@ -1,6 +1,6 @@
 <article class="project project-1" id="project-1">
   <div class="post-content">
-    <img src="/images/projects/spending-tweets.jpg" width="250" class="post-image img-rounded thumbnail" >
+    <img src="/images/projects/spending-tweets.jpg" width="250" class="img-fluid float-sm-right ml-sm-2 mb-sm-2" >
 
     <p>Spending Tweets was developed as an exercise for <a href="https://mysociety.org">mySociety.org</a>.  I was challenged to produce a twitter bot that would respond to queries from users about local government spending in approximately 4 hours.</p>
 

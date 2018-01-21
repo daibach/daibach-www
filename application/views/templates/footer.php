@@ -3,8 +3,8 @@
       <?php if(isset($site_section)) : ?>
         <?php if($site_section=='about' || $site_section=='contact'
           || $site_section=='projects' || $site_section=='privacy') : ?>
-            </div><!-- /.col-md-9 -->
-            <div class="col-md-3 col-sm-4">
+            </div><!-- /.col-9 -->
+            <div class="col">
               <?php
               if(isset($site_section)) {
                 if($site_section=='about' || $site_section=='contact') {
@@ -27,10 +27,10 @@
     <div class="container">
       <nav>
         <ul class="nav nav-pills">
-          <li><a href="/about">About me</a></li>
-          <li><a href="https://daibach.uk/">Blog posts</a></li>
-          <li><a href="/projects">Side projects</a></li>
-          <li><a href="/contact">Get in touch</a></li>
+          <li class="nav-item"><a class="nav-link bg-light" href="/about">About me</a></li>
+          <li class="nav-item"><a class="nav-link bg-light" href="https://daibach.uk/">Blog posts</a></li>
+          <li class="nav-item"><a class="nav-link bg-light" href="/projects">Side projects</a></li>
+          <li class="nav-item"><a class="nav-link bg-light" href="/contact">Get in touch</a></li>
         </ul>
       </nav>
     </div>
@@ -39,12 +39,12 @@
   <footer id="pagefooter">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-xs-6">
+        <div class="col">
           <p><a href="/privacy">Privacy &amp; cookies</a> | <a href="/contact">Contact me</a></p>
           <div class="legal">&copy; <?php echo date('Y'); ?></div>
         </div>
-        <div class="col-md-6 col-s-6">
-          <h3 class="visible-print">Follow me</h3>
+        <div class="col">
+          <h3 class="d-none d-print-block">Follow me</h3>
           <ul class="followme">
             <li><a href="https://www.twitter.com/dafyddbach" title="Follow Dafydd on Twitter"><img src="/images/icons/twitter_32.gif" width="32" height="32" alt="Twitter" /></a></li>
             <li><a href="https://www.flickr.com/photos/dafyddbach" title="Follow Dafydd on Flickr"><img src="/images/icons/flickr_32.gif" width="32" height="32" alt="Flickr" /></a></li>

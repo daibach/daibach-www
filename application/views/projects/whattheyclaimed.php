@@ -1,6 +1,6 @@
 <article class="project project-1" id="project-1">
   <div class="post-content">
-    <img src="/images/projects/whattheyclaimed.jpg" width="250" class="post-image img-rounded thumbnail" >
+    <img src="/images/projects/whattheyclaimed.jpg" width="250" class="img-fluid float-sm-right ml-sm-2 mb-sm-2" >
 
     <p>WhatTheyClaimed was developed as a crowd-sourcing attempt at processing MP expenses details when the original data was released in June 2009.</p>
 
@@ -13,7 +13,7 @@
     <ul class="media-grid">
       <li>
         <a href="https://chart.apis.google.com/chart?chs=690x250&chd=t:1.75303921302,6.7858437257,2.10203467537,0.571765595271,3.93675367745,1.31942914667,3.00310064965,1.37618068842,15.205177155,19.2549176714,0.933730818067,2.51050433911,10.0066581404,2.26066319038,1.90465953141,6.91109314077,2.5313874921,0.542551810975,12.7046724022,1.3606933518,2.65824221558,0.366901369356&cht=p&chl=Cleaning|Constituency%20fliers%20and%20newsletters,%20etc.|Council%20Tax%20and%20Rates|Electrical%20items|Food|Gardening%20and%20garden%20maintenance|Hotels|Household%20Items|Miscellaneous|Mortgage|Office%20equipment|Organisational%20membership%20fees|Rent|Repairs,%20Insurance%20and%20Security|Service%20and%20Maintenance|Staff%20costs|Stationery|Surgery%20costs|Telephone%20and%20Communications|Travel|Utilities|Website%20and%20Internet%20hosting">
-          <img class="thumbnail" src="https://chart.apis.google.com/chart?chs=690x250&chd=t:1.75303921302,6.7858437257,2.10203467537,0.571765595271,3.93675367745,1.31942914667,3.00310064965,1.37618068842,15.205177155,19.2549176714,0.933730818067,2.51050433911,10.0066581404,2.26066319038,1.90465953141,6.91109314077,2.5313874921,0.542551810975,12.7046724022,1.3606933518,2.65824221558,0.366901369356&cht=p&chl=Cleaning|Constituency%20fliers%20and%20newsletters,%20etc.|Council%20Tax%20and%20Rates|Electrical%20items|Food|Gardening%20and%20garden%20maintenance|Hotels|Household%20Items|Miscellaneous|Mortgage|Office%20equipment|Organisational%20membership%20fees|Rent|Repairs,%20Insurance%20and%20Security|Service%20and%20Maintenance|Staff%20costs|Stationery|Surgery%20costs|Telephone%20and%20Communications|Travel|Utilities|Website%20and%20Internet%20hosting" alt="pie chart of data collected during the WhatTheyClaimed experiment"/>
+          <img class="img-fluid" src="https://chart.apis.google.com/chart?chs=690x250&chd=t:1.75303921302,6.7858437257,2.10203467537,0.571765595271,3.93675367745,1.31942914667,3.00310064965,1.37618068842,15.205177155,19.2549176714,0.933730818067,2.51050433911,10.0066581404,2.26066319038,1.90465953141,6.91109314077,2.5313874921,0.542551810975,12.7046724022,1.3606933518,2.65824221558,0.366901369356&cht=p&chl=Cleaning|Constituency%20fliers%20and%20newsletters,%20etc.|Council%20Tax%20and%20Rates|Electrical%20items|Food|Gardening%20and%20garden%20maintenance|Hotels|Household%20Items|Miscellaneous|Mortgage|Office%20equipment|Organisational%20membership%20fees|Rent|Repairs,%20Insurance%20and%20Security|Service%20and%20Maintenance|Staff%20costs|Stationery|Surgery%20costs|Telephone%20and%20Communications|Travel|Utilities|Website%20and%20Internet%20hosting" alt="pie chart of data collected during the WhatTheyClaimed experiment"/>
         </a>
       </li>
     </ul>

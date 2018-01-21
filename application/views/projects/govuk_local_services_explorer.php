@@ -1,6 +1,6 @@
 <article class="project project-1" id="project-1">
   <div class="post-content">
-    <img src="/images/projects/govuk-local-services-explorer/screen.jpg" width="500" class="post-image img-rounded img-responsive thumbnail" >
+    <img src="/images/projects/govuk-local-services-explorer/screen.jpg" width="500" class="img-fluid float-sm-right ml-sm-2 mb-sm-2" >
 
     <p>The GOV.UK website provides links to services provided by the various bits of local government around the UK. GOV.UK prefers to link directly to the service on the local authorities website rather than the homepage, so that the user gets straight to what they want to do.</p>
     <p>To provide these deep links, the GOV.UK site used a database of around 94,000 URLs collected in a service called Local Directgov. This database was managed by the local authorities and imported into GOV.UK on a daily basis.</p>
