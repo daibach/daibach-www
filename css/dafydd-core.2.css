@@ -1,0 +1,51 @@
+a { color: #2B8CC4; }
+a:hover{ color: #1d5e84; }
+p, ul, h1, h2, h3, h4, h5 { max-width: 850px; }
+
+/* NAVBAR */
+.navbar { background: #2B8CC4; }
+.navbar .nav-item a.nav-link { color: #fff; }
+.navbar .nav-item.active a.nav-link { background: #1d5e84;}
+
+/* NAVS */
+.nav-pills .nav-link.active { background: #2B8CC4;}
+.nav-pills .nav-link:hover { background: #d4e8f3; }
+.nav-pills .nav-link.active:hover { background: #1d5e84; }
+
+/* HEADERS */
+main>header, article>header { background: #1d5e84; margin-bottom: 15px; }
+main>header .container, article>header .container { padding-top: 15px; }
+main>header h1, article>header h1 { color: #fff; font-size: 3.5rem; line-height: 1.2; font-weight: bold; padding: 0 0 15px 0; }
+main>header p, article>header p { color: #fff; border-top: #2B8CC4 1px dotted; padding: 10px 0 15px 0; margin: 0; }
+
+header.masthead { border-bottom: #efefef 1px solid; padding: 0 0 15px 0; margin: 0 0 15px 0;}
+header.masthead h1 { font-size: 3.5rem; font-weight: bold;}
+header.masthead h1 span, header.masthead p span { color: #2B8CC4;}
+
+/* SUBFOOTER */
+footer#subfooter { margin: 45px 0 0 0; background: #2B8CC4; padding: 30px 0; }
+footer#subfooter nav .nav-pills>li { margin: 0 5px 5px 0;}
+body.home footer#subfooter { background: #d4e8f3; }
+.disclaimer { background: #1d5e84; padding: 15px 0; color: #fff;}
+
+/* FOOTER */
+footer#pagefooter .container { padding: 30px 15px; font-size: 0.8em; }
+footer#pagefooter .legal { text-align: left; font-weight: bold; }
+footer#pagefooter h3 { font-weight: bold;}
+footer#pagefooter ul.followme { margin: 0; padding: 0; list-style: none;}
+footer#pagefooter ul.followme li { float: right; padding: 0 1em 1em 0;}
+
+main article .post-meta { border-top: #d4e8f3 2px solid; border-bottom: #d4e8f3 2px solid; padding: 15px 0; margin-top: 45px;}
+main article .post-image { float: right; margin: 0 0 15px 15px; }
+main .media-grid { list-style: none; margin: 0; padding: 0;}
+main .media-grid li { float: left; margin: 0 10px 10px 0;}
+main .media-grid-compact .thumbnail { padding: 0; margin-bottom: 0;}
+
+@media (max-width: 767px) {
+  header.masthead h1 { font-size: 2em; }
+  main header h1 { font-size: 3rem; }
+}
+@media (max-width: 576px) {
+  header.masthead h1 span { display: block; }
+  main header h1 { font-size: 2rem; }
+}
