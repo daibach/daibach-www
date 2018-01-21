@@ -15,9 +15,9 @@
       <title><?php echo SITE_NAME; ?></title>
     <?php endif; ?>
 
-    <link rel="stylesheet" href="/css/bootstrap/bootstrap.3.3.7.min.css">
-    <link rel="stylesheet" href="/css/dafydd-core.css">
-    <link rel="stylesheet" href="/css/dafydd-site.css">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.4.0.0.min.css">
+    <link rel="stylesheet" href="/css/dafydd-core.2.css">
+    <link rel="stylesheet" href="/css/dafydd-site.2.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,28 +38,7 @@
   </head>
   <body <?php if(isset($site_section)) :?>class="<?php echo $site_section; ?>"<?php endif; ?>>
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    <div class="navbar navbar-default navbar-static-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/" title="Dafydd Vaughan"><img src="/images/dai-2016.jpg" id="dai-logo" class="img-rounded" width="25"/> <span>Dafydd Vaughan</span></a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li<?php if(isset($site_section) && $site_section=='home') : ?> class="active"<?php endif; ?>><a href="/" title="return to the home page">Home</a></li>
-            <li<?php if(isset($site_section) && $site_section=='about') : ?> class="active"<?php endif; ?>><a href="/profile" title="my profile">About me</a></li>
-            <li><a href="https://daibach.uk/" title="Dafydd's blog" >Blog</a></li>
-            <li<?php if(isset($site_section) && $site_section=='projects') : ?> class="active"<?php endif; ?>><a href="/projects" title="side projects">Side projects</a></li>
-            <li<?php if(isset($site_section) && $site_section=='contact') : ?> class="active"<?php endif; ?>><a href="/contact" title="Contact me" >Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+    <?php include_once('navbar.php'); ?>
 
     <main id="content" role="main">
       <?php if(isset($site_section) && $site_section=='home') : ?>

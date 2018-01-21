@@ -1,6 +1,6 @@
 <article class="project project-1" id="project-1">
   <div class="post-content">
-    <img src="/images/projects/govuk-infoscreens.jpg" width="250" class="post-image img-rounded thumbnail" >
+    <img src="/images/projects/govuk-infoscreens.jpg" width="250" class="img-fluid float-sm-right ml-sm-2 mb-sm-2" >
 
     <p>Information screens that provide a near-realtime overview of the editorial work happening during the development of the beta for the single website for government.</p>
 

@@ -1,9 +1,9 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-2 col-sm-2 col-xs-12">
-      <img src="/images/dai-2016.jpg" id="dai-logo" class="img-rounded img-responsive" width="140"/>
+    <div class="col-lg-2">
+      <img src="/images/dai-2016.jpg" id="dai-logo" class="rounded" width="140"/>
     </div>
-    <div class="col-md-10 col-sm-10 col-xs-12">
+    <div class="col">
       <header class="masthead">
         <h1>Hello, I'm <span>Dafydd Vaughan</span></h1>
         <h2>I help people make things for the web</h2>
