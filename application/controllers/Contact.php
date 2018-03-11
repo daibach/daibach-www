@@ -145,8 +145,11 @@ class Contact extends CI_Controller {
     $response = curl_exec($ch);
     $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     if($http_status===200) {
+      log_message('debug',"CONTACT: Message send sucess");
       return TRUE;
     } else {
+      log_message('error',"CONTACT: Message send fail - http code ($http_status)");
+      log_message('error',"CONTACT: Message send fail - curl error (".curl_error($ch).")");
       return FALSE;
     }
   }
