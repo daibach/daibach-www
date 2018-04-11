@@ -1,2 +1,3 @@
-body.home .navbar { margin-bottom: 30px; }
+body.home .navbar .navbar-brand { visibility: hidden; }
+body.home .lead { font-size: 2rem;}
 main .post-list article { padding: 15px 0; }
