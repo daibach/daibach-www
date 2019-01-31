@@ -13,9 +13,6 @@
         <li class="nav-item<?php if(isset($site_section) && $site_section=='home') : ?> active<?php endif; ?>">
           <a class="nav-link" href="/" title="return to the home page">Home</a>
         </li>
-        <li class="nav-item<?php if(isset($site_section) && $site_section=='about') : ?> active<?php endif; ?>">
-          <a class="nav-link" href="/profile" title="my profile">About me</a>
-        </li>
         <li class="nav-item<?php if(isset($site_section) && $site_section=='blog') : ?> active<?php endif; ?>">
           <a class="nav-link" href="https://daibach.uk" title="my blog">Blog</a>
         </li>

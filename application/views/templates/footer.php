@@ -27,7 +27,6 @@
     <div class="container">
       <nav>
         <ul class="nav nav-pills">
-          <li class="nav-item"><a class="nav-link bg-light" href="/about">About me</a></li>
           <li class="nav-item"><a class="nav-link bg-light" href="https://daibach.uk/">Blog posts</a></li>
           <li class="nav-item"><a class="nav-link bg-light" href="/projects">Side projects</a></li>
           <li class="nav-item"><a class="nav-link bg-light" href="/contact">Get in touch</a></li>
