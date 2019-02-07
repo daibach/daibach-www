@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteRule ^more(/)?$     /profile [nc,l,r]
+  RewriteRule ^blogs(/)?$    https://daibach.uk/articles/ [nc,l,r]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.php [L]
+
+  ErrorDocument 410 /gone
+</IfModule>
