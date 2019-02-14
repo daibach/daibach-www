@@ -22,8 +22,8 @@ class Welcome extends CI_Controller {
 	{
 
     $page_data = array(
-      'title' => SITE_NAME . " - technical architect, product manager &amp; digital strategist",
-      'meta_description' => "Dafydd Vaughan - technical architect, product manager &amp; digital strategist. I build teams, develop products and transform organisations.",
+      'title' => SITE_NAME . " - digital technology specialist",
+      'meta_description' => "Dafydd Vaughan - digital teachnology specialist. I advise organisations on replacement of legacy technology, adoption of public cloud services, and how to build strong digital teams.",
       "site_section" => "home",
       "page_title" => "Hello, I'm Dafydd Vaughan"
     );

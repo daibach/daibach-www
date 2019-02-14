@@ -6,7 +6,7 @@
       </div>
       <div class="col">
           <h1>Hello, I'm <span>Dafydd Vaughan</span></h1>
-          <h2>I help people make things for the web</h2>
+          <h2>I'm a digital technology specialist.</h2>
         </header>
       </div>
     </div>
@@ -15,10 +15,9 @@
 <div class="container">
   <div class="row">
     <div class="col offset-lg-2">
-      <p class="lead">I'm a technology specialist, product manager and digital strategist.</p>
-      <p class="lead">I build teams, develop products and transform organisations.</p>
-      <p class="lead">I'm the director of <a href="https://www.cedyrn.com">Cedyrn Ltd</a> and affiliate at <a href="https://www.public.digital">Public Digital</a>. I was a founder of <a href="https://gds.blog.gov.uk"><abbr title="Government Digital Service">GDS</abbr></a>. I've built things for the Ministry of Justice, DVLA, Consumer Focus and Thomas Cook.</p>
-      <p class="lead"><a href="<?php echo site_url('contact'); ?>" title="Send me a message">Get in touch</a>.</p>
+      <p class="lead">I advise organisations on replacement of legacy technology, adoption of public cloud services, and how to build strong digital teams.</p>
+      <p class="lead">I'm the director of <a href="https://www.cedyrn.com">Cedyrn Ltd</a>, affiliate at <a href="https://www.public.digital">Public Digital</a> and was a co-founder of the UK <a href="https://gds.blog.gov.uk">Government Digital Service</a>.</p>
+      <p class="lead"><a href="<?php echo site_url('profile'); ?>" title="Read my profile">Read more about me</a> or <a href="<?php echo site_url('contact'); ?>" title="Send me a message">Get in touch</a>.</p>
     </div>
   </div>
 </div>
