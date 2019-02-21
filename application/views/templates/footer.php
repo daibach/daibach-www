@@ -23,13 +23,14 @@
     <?php endif; ?>
   </main>
 
-  <footer id="subfooter">
+  <footer id="sitemenu" class="subfooter">
     <div class="container">
       <nav>
         <ul class="nav nav-pills">
-          <li class="nav-item"><a class="nav-link bg-light" href="https://daibach.uk/">Blog posts</a></li>
-          <li class="nav-item"><a class="nav-link bg-light" href="/projects">Side projects</a></li>
-          <li class="nav-item"><a class="nav-link bg-light" href="/contact">Get in touch</a></li>
+          <li class="nav-item"><a class="nav-link" href="/profile">About me</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://daibach.uk/">Blog posts</a></li>
+          <li class="nav-item"><a class="nav-link" href="/projects">Side projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Get in touch</a></li>
         </ul>
       </nav>
     </div>
@@ -39,21 +40,21 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <p><a href="/privacy">Privacy &amp; cookies</a> | <a href="/contact">Contact me</a></p>
-          <div class="legal">&copy; <?php echo date('Y'); ?></div>
-        </div>
-        <div class="col">
           <h3 class="d-none d-print-block">Follow me</h3>
           <ul class="followme">
-            <li><a href="https://www.twitter.com/dafyddbach" title="Follow Dafydd on Twitter"><img src="/images/icons/twitter_32.gif" width="32" height="32" alt="Twitter" /></a></li>
-            <li><a href="https://www.flickr.com/photos/dafyddbach" title="Follow Dafydd on Flickr"><img src="/images/icons/flickr_32.gif" width="32" height="32" alt="Flickr" /></a></li>
-            <li><a href="https://www.linkedin.com/in/dafyddvaughan" title="Follow Dafydd on LinkedIn"><img src="/images/icons/linkedin_32.gif" width="32" height="32" alt="Linkedin" /></a></li>
-            <li><a href="http://daibach.tumblr.com" title="Follow Dafydd on Tumblr"><img src="/images/icons/tumblr_32.gif" width="32" height="32" alt="Tumblr" /></a></li>
-            <li><a href="https://github.com/daibach" title="Follow Dafydd on Github"><img src="/images/icons/github_32.gif" width="32" height="32" alt="Github" /></a></li>
-            <li><a href="https://daibach.uk/feed/" title="Follow Dafydd using RSS"><img src="/images/icons/rss_32.gif" width="32" height="32" alt="RSS" /></a></li>
+            <li><a href="https://www.linkedin.com/in/dafyddvaughan" title="Follow Dafydd on LinkedIn"><img src="/images/icons/linkedin-white.png" width="48" height="48" alt="Linkedin - Dafydd Vaughan" /></a></li>
+            <li><a href="https://www.twitter.com/dafyddbach" title="Follow Dafydd on Twitter"><img src="/images/icons/twitter-white.png" width="48" height="48" alt="Twitter - @dafyddbach" /></a></li>
             <li class="clearfix"></li>
           </ul>
           <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="legal"><br/>&copy; <?php echo date('Y'); ?></div>
+        </div>
+        <div class="col">
+          <div class="footer-extra"><a href="/privacy">Privacy &amp; cookies</a> <br/> <a href="/contact">Contact me</a></div>
         </div>
     </div><!-- /.container -->
   </footer>
