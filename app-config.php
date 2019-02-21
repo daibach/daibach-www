@@ -2,7 +2,7 @@
 define('SITE_NAME',               'Dafydd Vaughan');
 define('SITE_BASE_URL',           getenv('APPSETTING_SITE_BASE_URL'));
 define('SITE_LOG_THRESHOLD',      0);
-define('SITE_ENCRYPT_KEY',        'xxx');
+define('SITE_ENCRYPT_KEY',        getenv('APPSETTING_SITE_ENCRYPT_KEY'));
 define('SITE_COOKIE_NAME',        'daibach');
 define('SITE_COOKIE_DOMAIN',      '.dafyddvaughan.uk');
 define('SITE_COOKIE_PREFIX',      'daibach_');
