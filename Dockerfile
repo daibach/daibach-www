@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM cedyrn/php-parent:7.2
 
 RUN a2enmod rewrite
 
