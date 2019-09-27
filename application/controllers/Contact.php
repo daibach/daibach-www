@@ -75,9 +75,9 @@ class Contact extends CI_Controller {
       array(
         'field' => 'txtMessage',
         'label' => 'message',
-        'rules' => 'trim|required',
+        'rules' => 'trim|required|callback_content_check',
         'errors' => array(
-          'required'    => 'You must provide a %s'
+          'required'    => 'You must provide a %s',
         )
       ),
       array(
@@ -90,6 +90,27 @@ class Contact extends CI_Controller {
       )
     );
     return $config;
+  }
+
+  public function content_check($content) {
+
+    if(substr_count($content,"http:") > 2 || substr_count($content,"https:") > 2 || substr_count($content,"&lt;a &gt;") > 0) {
+
+      $this->form_validation->set_message('content_check', 'Your message contains too many links, please remove some');
+      return FALSE;
+
+    } elseif(
+        substr_count($content,"crypto") > 0 ||
+        substr_count($content,"bitcoin") > 0 ||
+        substr_count($content,"porn") > 0
+    ) {
+
+      $this->form_validation->set_message('content_check', 'Your message contains banned keywords');
+      return FALSE;
+
+    } else {
+      return TRUE;
+    }
   }
 
   private function _process_form() {
