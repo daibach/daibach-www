@@ -19,9 +19,6 @@
         <li class="nav-item<?php if(isset($site_section) && $site_section=='blog') : ?> active<?php endif; ?>">
           <a class="nav-link" href="https://daibach.uk" title="my blog">Blog</a>
         </li>
-        <li class="nav-item<?php if(isset($site_section) && $site_section=='projects') : ?> active<?php endif; ?>">
-          <a class="nav-link" href="/projects" title="side projects">Side projects</a>
-        </li>
         <li class="nav-item<?php if(isset($site_section) && $site_section=='contact') : ?> active<?php endif; ?>">
           <a class="nav-link" href="/contact" title="contact me">Contact</a>
         </li>

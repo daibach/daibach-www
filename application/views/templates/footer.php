@@ -29,7 +29,6 @@
         <ul class="nav nav-pills">
           <li class="nav-item"><a class="nav-link" href="/profile">About me</a></li>
           <li class="nav-item"><a class="nav-link" href="https://daibach.uk/">Blog posts</a></li>
-          <li class="nav-item"><a class="nav-link" href="/projects">Side projects</a></li>
           <li class="nav-item"><a class="nav-link" href="/contact">Get in touch</a></li>
         </ul>
       </nav>
