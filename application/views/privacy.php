@@ -22,7 +22,3 @@
 <p>I use Google Analytics to collect anonymous information about how people use this site. Google Analytics stores information about what pages you visit, how long you are on the site, how you got here and what you click on. I do not collect or store your personal information (e.g. your name or address) so this information cannot be used to identify who you are. I do not allow Google to use or share my analytics data.</p>
 
 <p>If you really don't want Google Analytics to see your visits to this (or any other website), go take a look at this <a href="https://tools.google.com/dlpage/gaoptout" title="Google Analytics opt-out browser add-on">useful browser</a> add-on provided by Google.</p>
-
-<hr/>
-<h2>The legal bit</h2>
-<p>Use of cookies and other related technologies are governed by the <a href="http://www.legislation.gov.uk/uksi/2003/2426/made">Privacy and Electronic Communications (EC Directive) Regulations 2003</a> as amended by the <a href="http://www.legislation.gov.uk/uksi/2011/1208/made">Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011</a> and the <a href="http://www.legislation.gov.uk/ukpga/1998/29/made">Data Protection Act 1998</a>.</p>
