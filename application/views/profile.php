@@ -12,4 +12,4 @@
 
 <p>I have a background in software engineering a masters degree in <a href="https://www.swansea.ac.uk/compsci/research-and-impact/human-computer-interaction/">Human Computer Interaction</a> from Swansea University.</p>
 
-<p>I'm a director at <a href="https://www.cedyrn.com">Cedyrn</a>.</p>
+<p>I'm a director at <a href="https://www.cedyrn.com">Cedyrn</a> and a member of the advisory panel for the <a href="https://twitter.com/cdps_wales">Centre for Digital Public Services</a> in Wales.</p>
