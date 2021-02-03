@@ -12,4 +12,10 @@ COPY images /var/www/html/images
 COPY javascript /var/www/html/javascript
 COPY system /var/www/html/system
 
+COPY apache-directives.txt /tmp/apache-directives.txt
+
+RUN cat /tmp/apache-directives.txt | tee "$APACHE_CONFDIR/conf-available/docker-application.conf"
+RUN cat "$APACHE_CONFDIR/conf-available/docker-application.conf"
+RUN a2enconf docker-application && service apache2 restart
+
 EXPOSE 80

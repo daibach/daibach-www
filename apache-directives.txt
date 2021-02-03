@@ -1,0 +1,9 @@
+<Directory "/var/www/html/images">
+  Header set Cache-Control "max-age=900, s-maxage=86400, stale-if-error=3600, public"
+</Directory>
+<Directory "/var/www/html/css">
+  Header set Cache-Control "max-age=900, s-maxage=86400, stale-if-error=3600, public"
+</Directory>
+<Directory "/var/www/html/javascript">
+  Header set Cache-Control "max-age=900, s-maxage=86400, stale-if-error=3600, public"
+</Directory>
