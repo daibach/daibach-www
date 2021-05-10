@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-2">
-        <img src="/images/dai-2018.jpg" id="dai-logo" class="rounded" width="140"/>
+        <img src="/images/dai-current.jpg" id="dai-logo" class="rounded" width="140"/>
       </div>
       <div class="col">
           <h1>Hello, I'm <span>Dafydd Vaughan</span></h1>
