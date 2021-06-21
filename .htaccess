@@ -4,7 +4,7 @@
 
   RewriteRule ^more(/)?$     /profile [nc,l,r]
   RewriteRule ^blogs(/)?$    https://daibach.uk/articles/ [nc,l,r]
-  RewriteRule ^images/dai-current.jpg$ images/dai-2021c.jpg [nc,l]
+  RewriteRule ^images/dai-current.jpg$ images/dai-2021b.jpg [nc,l]
 
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
