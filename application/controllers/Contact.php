@@ -18,10 +18,13 @@ class Contact extends CI_Controller {
     if ($this->form_validation->run() == FALSE) {
       $this->_show_form();
     } else {
-      if($this->_process_form()) {
+      $send_result = $this->_process_form();
+      if($send_result===TRUE) {
         $this->_show_success();
+      } elseif($send_result==='reject') {
+        $this->_show_form(array('sending_failed'=>TRUE,'sending_failed_reason'=>'reject'));
       } else {
-        $this->_show_form(array('sending_failed'=>TRUE));
+        $this->_show_form(array('sending_failed'=>TRUE,'sending_failed_reason'=>'error'));
       }
     }
   }
@@ -165,14 +168,24 @@ class Contact extends CI_Controller {
 
     $response = curl_exec($ch);
     $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    if($http_status===200) {
-      log_message('debug',"CONTACT: Message send sucess");
-      return TRUE;
-    } else {
-      log_message('error',"CONTACT: Message send fail - http code ($http_status)");
-      log_message('error',"CONTACT: Message send fail - curl error (".curl_error($ch).")");
-      return FALSE;
+    switch($http_status) {
+      case 200:
+      case 201:
+      case 202:
+      case 204:
+        log_message('debug',"CONTACT: Message send sucess");
+        return TRUE;
+        break;
+      case 400:
+        log_message('debug',"CONTACT: Message send rejected");
+        return "reject";
+        break;
+      default:
+        log_message('error',"CONTACT: Message send fail - http code ($http_status)");
+        log_message('error',"CONTACT: Message send fail - curl error (".curl_error($ch).")");
+        return FALSE;
     }
+
   }
 
 }

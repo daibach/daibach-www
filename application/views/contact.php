@@ -5,7 +5,14 @@ if (validation_errors()) {
   echo "</ul></div>";
 }
 if(isset($sending_failed) && $sending_failed) {
-  echo "<div class='alert alert-danger'><p><strong>Sorry, something went wrong while sending the message.</strong></p><p>Please try again</p></div>";
+  if(isset($sending_failed_reason) && $sending_failed_reason=='reject') {
+    echo "<div class='alert alert-danger'><p><strong>Sorry, your message was rejected.</strong></p><p>Please try again</p></div>";
+  } elseif(isset($sending_failed_reason) && $sending_failed_reason=='error') {
+    echo "<div class='alert alert-danger'><p><strong>Sorry, something went wrong while sending the message.</strong></p><p>Please try again</p></div>";
+  } else {
+    echo "<div class='alert alert-danger'><p><strong>Sorry, something went wrong while sending the message.</strong></p><p>Please try again</p></div>";
+  }
+
 }
 ?>
 <form method="post" action="/contact/send" class="contact-form">
