@@ -122,7 +122,7 @@ class Contact extends CI_Controller {
     $email = $this->input->post('txtEmail');
     $message = $this->input->post('txtMessage');
     $ip = $_SERVER['REMOTE_ADDR'];
-    if(isset($_SERVER['HTTP_REFERER']))         { $referrer = $_SERVER['HTTP_REFERER']; }
+    if(isset($_SERVER['HTTP_REFERER']))         { $referrer = $_SERVER['HTTP_REFERER']; } else { $referrer = "not-set"; }
     if(isset($_SERVER['HTTP_X_FORWARDED_FOR'])) { $xforward = $_SERVER['HTTP_X_FORWARDED_FOR']; }
     if(isset($_SERVER['HTTP_USER_AGENT']))      { $ua       = $_SERVER['HTTP_USER_AGENT']; }
     return $this->_submit_contact($name,$email,$message,$referrer,$ip,$xforward,$ua);
