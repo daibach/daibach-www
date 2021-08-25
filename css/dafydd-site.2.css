@@ -1,3 +1,12 @@
-body.home .navbar .navbar-brand { visibility: hidden; }
+body.home .navbar .navbar-brand { display: none; }
 body.home .lead { font-size: 2rem;}
 main .post-list article { padding: 15px 0; }
+
+
+#homepage-content { margin-top: 30px;}
+#homepage-content h1 { font-size: 3rem; font-weight: bold; margin: 0 0 30px 0; }
+#homepage-content h1 span { color: #63a8a2;}
+
+header.masthead { padding: 15px 0 30px 0; margin: 0 0 15px 0;}
+header.masthead h1 { font-size: 3.5rem; font-weight: bold; color: #fff; }
+header.masthead h2 { color: #fff; }
