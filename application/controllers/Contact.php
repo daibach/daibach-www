@@ -35,7 +35,8 @@ class Contact extends CI_Controller {
       'title' => "Contact Me - " . SITE_NAME,
       "site_section" => "contact",
       "site_page" => "contact",
-      "page_title" => "Contact me"
+      "page_title" => "Contact me",
+      'remove_masthead' => true
     );
 
     $this->load->view('templates/header', $page_data);
@@ -48,7 +49,8 @@ class Contact extends CI_Controller {
       'title' => "Message Sent - Contact Me - " . SITE_NAME,
       "site_section" => "contact",
       "site_page" => "contact",
-      "page_title" => "Contact me"
+      "page_title" => "Contact me",
+      'remove_masthead' => true
     );
 
     $this->load->view('templates/header', $page_data);

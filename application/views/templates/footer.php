@@ -1,4 +1,11 @@
-    <?php if(isset($site_section) && $site_section=='home') : ?>
+    <?php if(isset($remove_masthead) && $remove_masthead) : ?>
+        </div>
+        <div class="col-lg-4">
+          <?php if(isset($inc_photo) && $inc_photo) : ?>
+            <img src="/images/dai-2021d.jpg" id="dai-logo" class="rounded" width="280"/>
+          <?php endif; ?>
+        </div>
+      </div>
     <?php else : ?>
       <?php if(isset($site_section)) : ?>
         <?php if($site_section=='about' || $site_section=='contact'

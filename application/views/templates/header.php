@@ -41,7 +41,10 @@
     <?php include_once('navbar.php'); ?>
 
     <main id="content" role="main">
-      <?php if(isset($site_section) && $site_section=='home') : ?>
+      <?php if(isset($remove_masthead) && $remove_masthead) : ?>
+        <div class="container" id="fp-content">
+          <div class="row">
+            <div class="col">
       <?php else : ?>
         <header>
           <div class="container">

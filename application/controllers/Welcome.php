@@ -25,7 +25,9 @@ class Welcome extends CI_Controller {
       'title' => SITE_NAME . " - digital technology specialist",
       'meta_description' => "Dafydd Vaughan - digital teachnology specialist. I advise organisations on replacement of legacy technology, adoption of public cloud services, and how to build strong digital teams.",
       "site_section" => "home",
-      "page_title" => "Hello, I'm Dafydd Vaughan"
+      "page_title" => "Hello, I'm Dafydd Vaughan",
+			'remove_masthead' => true,
+			'inc_photo' => true,
     );
 
     $this->load->view('templates/header', $page_data);
@@ -39,7 +41,9 @@ class Welcome extends CI_Controller {
       'title' => "About me - " . SITE_NAME,
       "site_section" => "about",
       "site_page" => "profile",
-      "page_title" => "About me"
+      "page_title" => "About me",
+			'remove_masthead' => true,
+			'inc_photo' => true,
     );
 
     $this->load->view('templates/header', $page_data);

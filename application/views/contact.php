@@ -1,3 +1,4 @@
+<h1>Get in touch</h1>
 <?php
 if (validation_errors()) {
   echo "<div class='alert alert-danger'><p><strong>Sorry, there is a problem:</strong></p><ul>";
